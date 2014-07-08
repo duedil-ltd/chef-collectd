@@ -8,3 +8,4 @@ default["collectd"]["name"]               = node["fqdn"]
 default["collectd"]["plugins"]            = Mash.new
 default["collectd"]["graphite_role"]      = "graphite"
 default["collectd"]["graphite_ipaddress"] = ""
+default["collectd"]["graphite_port"]      = "2003"

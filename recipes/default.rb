@@ -56,6 +56,7 @@ if node["collectd"]["plugins"]
     plugin_support_packages << "libxml2-dev" if plugins.include?("ascent") ||
       plugins.include?("virt")
     plugin_support_packages << "libyajl-dev" if plugins.include?("curl_json")
+    plugin_support_packages << "python-dev" if plugins.include?("python")
   end
 
   plugin_support_packages.each do |pkg|
